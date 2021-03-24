@@ -1,0 +1,797 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero_video {
+    height: 100%;
+}
+
+.hero_text {
+    position: absolute;
+    top: 0;
+    left: 4.22%;
+    width: 91.66%;
+    height: calc(100vh - 74px);
+    border: 1px solid rgb(163, 107, 79);
+    padding: 140px 3.37%;
+}
+
+.hero_title {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 150px;
+    font-weight: 200;
+    line-height: 160px;
+    letter-spacing: -3.75px;
+    color: rgb(255, 255, 255);
+    margin: 0 0 11px 0;
+    opacity: 0;
+    animation: fade_in_up 2s forwards;
+} 
+
+.hero_subtitle {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    animation: fade_in_up 2s forwards;
+} 
+
+.hero_arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 10px);
+    background-image: url(../brand/img/arrow_down_white.svg);
+    background-size: 20px;
+}
+
+@keyframes fade_in_up {
+    0% { margin-top: 80px; opacity: 0;}
+    100% { margin-top: 0px; opacity: 1;}
+ 
+ }
+ 
+ @keyframes zoom_out_bg {
+    0% { background-size: 110%; }
+    100% { background-size: 100%; }
+ }
+ 
+ 
+ @keyframes fade_in {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+ }
+ 
+/* Vision */
+.vision {
+    width: 100%;
+    height: 960px;
+    background-image: url(../brand/img/vision.jpg);
+    margin: 240px 0 0 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.vision_text {
+    position: absolute;
+    top: 98px;
+    right: 140px;
+    width: 37%;
+    color: rgb(255, 255, 255);
+}
+
+.vision_subtitle {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    margin-bottom: 40px;
+} 
+
+.vision_detail {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.65px;
+    color: rgb(255, 255, 255);
+    word-break: keep-all;
+    opacity: 0;
+} 
+
+/* WAY */
+.way {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../brand/img/way.jpg);
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 0 140px;
+}
+
+.way_text {
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    width: 36%;
+    color: rgb(255, 255, 255);
+}
+
+.way_subtitle {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-bottom: 40px;
+} 
+
+.way_detail {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.65px;
+    color: rgb(255, 255, 255);
+    word-break: keep-all;
+    opacity: 1;
+} 
+
+/* design_1 */
+.design_1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../brand/img/design_1.jpg);
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 0 140px;
+}
+
+.design_1_text {
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    width: 37%;
+    color: rgb(255, 255, 255);
+}
+
+.design_1_subtitle {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-bottom: 11px;
+} 
+
+.design_1_title {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -1.35px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-bottom: 41px;
+} 
+
+
+.design_1_detail {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgb(255, 255, 255);
+    word-break: keep-all;
+    opacity: 1;
+} 
+
+/* design_2 */
+.design_2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative; 
+    overflow: hidden;
+}
+
+.design_2_video {
+    width: 100%;
+}
+.design_2_text {
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    width: 37%;
+    color: rgb(255, 255, 255);
+}
+
+.design_2_subtitle {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-bottom: 11px;
+} 
+
+.design_2_title {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -1.35px;
+    color: rgb(163, 107, 79);
+    opacity: 1;
+    margin-bottom: 41px;
+} 
+
+
+.design_2_detail {
+    font-family: "genesis-head-light", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgb(255, 255, 255);
+    word-break: keep-all;
+    opacity: 1;
+} 
+
+/* Design 3 AT A GLANCE */
+
+.design_3 { 
+    width: 100%; 
+    height: auto;   
+    margin:240px 0 0 0; 
+    position: relative;  
+    padding: 0 140px;
+}
+   
+
+.design_3_text { }
+
+.design_3_subtitle { 
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 1; 
+    margin-bottom: 11px; 
+    text-align: center;
+}
+
+.design_3_title { 
+    font-family: 'genesis-head-light'; 
+    font-size: 54px; 
+    font-weight: 400; 
+    line-height: 61.992px; 
+    letter-spacing: -1.35px; 
+    color:rgb(173,123,97);
+    opacity: 1; 
+    margin-bottom: 41px;
+    text-align: center;
+}
+
+.design_3_img_wrap { 
+    position: relative; 
+    height: 714px; 
+    width: 100%;  
+}
+
+.design_3_img { 
+    position: absolute; 
+    opacity: 0; 
+    top:0; 
+    left:0; 
+    width: 100%;
+}
+
+.design_3_img:first-child { 
+    opacity: 1;
+}
+
+.design_3_ul { 
+    display: flex;  
+    margin: 120px 0 43px; 
+    position: relative; 
+    top:0; 
+    left:0; 
+}
+
+.design_3_ul li {
+    width: 25%; 
+    height: 56px;  
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 56px; 
+    letter-spacing: -0.3px; 
+    color:rgb(128,128,128); 
+    border-bottom: 1px solid rgba(128,128,128,0.4); 
+    cursor: pointer;
+}
+
+.design_3_ul li:hover { 
+    color:rgb(173,123,97); 
+}
+
+.design_3_ul li:first-child { 
+    color:rgb(173,123,97);  
+}
+
+.design_3_item_bar { 
+    height: 1px; 
+    width: 25%; 
+    border-bottom: 1px solid rgb(173,123,97); 
+    position: absolute; 
+    bottom:0; 
+    left:0; 
+    transition: all 0.6s; 
+}
+
+.design_3_detail_wrap { 
+    position: relative; 
+    top:0; 
+    left:0;}
+
+.design_3_detail { 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 28px;
+    letter-spacing: 0px; 
+    color:rgb(204,204,204);  
+    word-break: keep-all; 
+    opacity: 0;
+}
+
+.design_3_detail:first-child { 
+    opacity: 1;
+}
+
+/* Models and Line-up */
+
+.models { 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url(../brand/img/models.jpg); 
+    background-position: center center;  
+    background-size: 110%; 
+    background-repeat: no-repeat; 
+    margin:0; 
+    position: relative;
+    padding: 0 140px; 
+    margin: 240px 0 0 0; 
+}
+   
+.models_text { 
+    position: absolute; 
+    top:calc(50% - 80px); 
+    left:140px; 
+    height:160px; 
+    width:36%;
+}
+
+.models_subtitle { 
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 0; 
+    margin-bottom: 48px;
+}
+
+.models_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 26px; 
+    font-weight: 400; 
+    line-height: 32px; 
+    letter-spacing: -0.65px; 
+    color:rgb(255,255,255);  
+    word-break: keep-all; 
+    opacity: 0;
+}
+
+
+/* Lifestyle */
+
+.lifestyle { 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url(../brand/img/lifestyle.jpg); 
+    background-position: center center;  
+    background-size: 110%; 
+    background-repeat: no-repeat; 
+    margin:0; 
+    position: relative;
+    padding: 0 140px; 
+}
+
+.lifestyle_text { 
+    position: absolute; 
+    top:100px; 
+    left:140px; 
+    width:36%;
+}
+
+.lifestyle_subtitle { 
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 0; 
+    margin-bottom: 48px;
+}
+
+.lifestyle_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 26px; 
+    font-weight: 400; 
+    line-height: 32px; 
+    letter-spacing: -0.65px; 
+    color:rgb(255,255,255);  
+    word-break: keep-all; 
+    opacity: 0;}
+
+/* Space */ 
+
+.space { 
+    width: 100%; 
+    height: 600px; 
+    padding:0; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 240px 0 0 0;
+}
+
+.space_img { 
+    width: 64.54%; 
+    height: 100%; 
+    background-image: url(../brand/img/space.jpg);
+    background-position: center; 
+    background-size: cover;
+}
+
+.space_text { 
+    width: 374px; 
+    margin: 0 140px 0 180px;
+    border-bottom: 1px solid rgba(204,204,204,0.4);
+}
+
+.space_subtitle {
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 1; 
+    margin-bottom: 71px;
+}
+
+.space_title { 
+    font-family: 'genesis-head-light'; 
+    font-size: 36px; 
+    font-weight: 400; 
+    line-height: 43.92px; 
+    letter-spacing: -0.9px; 
+    color:rgb(173,123,97); 
+    opacity: 1; 
+    margin-bottom: 27px;}
+
+.space_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 28px; 
+    letter-spacing: 0px; 
+    color:rgb(204,204,204); 
+    word-break: keep-all; 
+    opacity: 1;  
+    margin-bottom: 73px;}
+
+
+/* .space_link { width: 240px; height: 56px;   display: block; border: 1px solid rgb(255,255,255);   color:rgb(255,255,255); text-align: center; line-height: 56px; transition: all 0.3s;}
+
+.space_link:hover { background-color: rgb(255,255,255); color:rgb(17,17,17);} */
+
+.space_link { 
+    width: 240px; 
+    height: 56px;  
+    position: relative; 
+    display: block;
+    border: 1px solid rgb(255,255,255); 
+    padding-top: 56px;  
+    transition: all 0.3s;} 
+
+.space_link span:first-child { 
+    display: block;  
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(255,255,255);  
+}
+
+.space_link span:last-child { 
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 56px;   
+    display: block; 
+    text-align: center; 
+    color:rgb(255,255,255); 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    transition: all 0.3s;
+}
+
+.space_link:hover { 
+    padding-top: 0; 
+}
+
+.space_link:hover span:last-child { 
+    color:rgb(17,17,17);
+}
+
+/* Membership */ 
+
+.membership { 
+    width: 100%; 
+    height: 600px; 
+    padding:0; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 240px 0 0 0;
+}
+
+.membership_img { 
+    width: 64.54%; 
+    height: 100%; 
+    background-image: url(../brand/img/membership.jpg);
+    background-position: center; 
+    background-size: cover;
+}
+
+.membership_text { 
+    width: 374px; 
+    margin: 0 180px 0 140px;
+    border-bottom: 1px solid rgba(204,204,204,0.4);
+}
+
+.membership_subtitle {
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px;
+    color:rgb(255,255,255); 
+    opacity: 1; 
+    margin-bottom: 71px;
+}
+
+.membership_title { 
+    font-family: 'genesis-head-light'; 
+    font-size: 36px; 
+    font-weight: 400; 
+    line-height: 43.92px; 
+    letter-spacing: -0.9px; 
+    color:rgb(173,123,97); 
+    opacity: 1; 
+    margin-bottom: 27px;
+}
+
+.membership_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 28px; 
+    letter-spacing: 0px; 
+    color:rgb(204,204,204);  
+    word-break: keep-all; 
+    opacity: 1;  
+    margin-bottom: 73px;
+}
+
+
+/* Partnership */ 
+
+.partnership { 
+    width: 100%; 
+    height: 600px; 
+    padding:0; 
+    display: flex; 
+    justify-content: space-between;
+    margin: 240px 0 0 0;
+}
+
+.partnership_img { 
+    width: 64.54%; 
+    height: 100%; 
+    background-image: url(../brand/img/partnership.jpg);
+    background-position: center; 
+    background-size: cover;
+}
+
+.partnership_text { 
+    width: 374px; 
+    margin: 0 140px 0 180px;
+    border-bottom: 1px solid rgba(204,204,204,0.4);
+}
+
+.partnership_subtitle {
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 1; 
+    margin-bottom: 71px;
+}
+
+.partnership_title { 
+    font-family: 'genesis-head-light'; 
+    font-size: 36px; 
+    font-weight: 400; 
+    line-height: 43.92px; 
+    letter-spacing: -0.9px; 
+    color:rgb(173,123,97); 
+    opacity: 1; 
+    margin-bottom: 27px;
+}
+
+.partnership_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 28px; 
+    letter-spacing: 0px; 
+    color:rgb(204,204,204);  
+    word-break: keep-all; 
+    opacity: 1;  
+    margin-bottom: 73px;
+}
+
+
+/* Our Journey */
+
+.journey { 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url(../brand/img/journey.jpg); 
+    background-position: center center;  
+    background-size: 110%;
+    background-repeat: no-repeat; 
+    margin:0; position: relative;
+    padding: 0 140px; 
+    margin-top: 240px; 
+}
+   
+.journey_text { 
+    position: absolute; 
+    top:100px; 
+    left:140px; 
+    width:36%;
+}
+
+.journey_subtitle { 
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 0; 
+    margin-bottom: 48px;
+}
+
+.journey_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 26px; 
+    font-weight: 400; 
+    line-height: 32px; 
+    letter-spacing: -0.65px; 
+    color:rgb(255,255,255);  
+    word-break: keep-all; 
+    opacity: 0;
+}
+
+/* Join Us */
+
+.joinus { 
+    width: 100%; 
+    height: 100vh; 
+    position: relative; 
+    margin-top: 240px; 
+}
+
+.joinus_text { 
+    position: absolute; 
+    top:calc(50% - 126px);
+    left:373px; 
+    width:960px; 
+    height:252px; 
+}
+
+.joinus_subtitle { 
+    font-family: 'genesis-head-light'; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    letter-spacing: -0.45px; 
+    color:rgb(255,255,255); 
+    opacity: 1; 
+    margin-bottom: 48px;
+}
+
+.joinus_detail { 
+    font-family: 'genesis-head-light'; 
+    font-size: 42px; 
+    font-weight: 400; 
+    line-height: 61.992px; 
+    letter-spacing: 0px; 
+    color:rgb(255,255,255);  
+    word-break: keep-all; 
+    opacity: 1; 
+}
+
+.journey_img1 {  
+    width: 394px; 
+    height: 498px; 
+    background-image: url(../brand/img/journey_1.jpg);
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute; 
+    top:200px; 
+    right:140px;
+}
+
+.journey_img2 {  
+    width: 660px; 
+    height: 330px; 
+    background-image: url(../brand/img/journey_2.jpg); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    position: absolute; 
+    bottom: 0; 
+    left:140px;
+}
