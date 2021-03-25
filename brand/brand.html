@@ -140,18 +140,65 @@
       
 
       <!-- Discover Our Models -->
-      <div class="models_2">
-         <div class="models_2_text">
-            <h3 class="models_2_subtitle">DISCOVER OUR MODELS</h3>
-
-            <h2 class="models_2_title">You Live.<br>You Grow.<br>You Know.</h2>
-            
-            <a>G80 자세히 보기 &gt;</a>
-            <a>G80</a>
-           
+      <div class="discover">
+         <div class="discover_text">
+            <h3 class="discover_subtitle">DISCOVER OUR MODELS</h3>
          </div>
-      </div>
+         
+         <div class="discover_content">
+            <!-- Image -->
+            <div class="discover_img_wrap">
+               <img class="discover_img" src="img/discover_1.jpg">
+               <img class="discover_img" src="img/discover_2.jpg">
+               <img class="discover_img" src="img/discover_3.jpg">
+               <img class="discover_img" src="img/discover_4.jpg">
+               <img class="discover_img" src="img/discover_5.jpg">
+            </div>
 
+            <!-- Text and Link -->
+            <ul class="discover_detail_wrap">
+               <li class="discover_detail">
+                  <h2 class="discover_title">NOTHING FEELS LIKE THE FIRST TIME.</h2>
+                  <a class="discover_more" href="#">
+                     <span>GV80 자세히 보기</span> <span>&gt;</span>
+                  </a>
+               </li>
+               <li class="discover_detail">
+                  <h2 class="discover_title">BORN TO CREATE.</h2>
+                  <a class="discover_more" href="#">
+                     <span>GV70 자세히 보기</span> <span>&gt;</span>
+                  </a>
+               </li>
+               <li class="discover_detail">
+                  <h2 class="discover_title">BORN TO MOVE.</h2>
+                  <a class="discover_more" href="#">
+                     <span>G70 자세히 보기</span> <span>&gt;</span>
+                  </a>
+               </li><li class="discover_detail">
+                  <h2 class="discover_title">BYOU LIVE.<br>YOU GROW.<br>YOU KNOW.</h2>
+                  <a class="discover_more" href="#">
+                     <span>G80 자세히 보기</span> <span>&gt;</span>
+                  </a>
+               </li><li class="discover_detail">
+                  <h2 class="discover_title">BORN TO BE DRIVEN.</h2>
+                  <a class="discover_more" href="#">
+                     <span>GV90 자세히 보기</span> <span>&gt;</span>
+                  </a>
+               </li>
+            </ul>
+
+            <!-- Button -->
+             <ul class="discover_button_wrap">
+               <li onclick="slideDiscover(0);" class="discover_button">GV80</li>
+               <li onclick="slideDiscover(1);" class="discover_button">GV70</li>
+               <li onclick="slideDiscover(2);" class="discover_button">G70</li>
+               <li onclick="slideDiscover(3);" class="discover_button">G80</li>
+               <li onclick="slideDiscover(4);" class="discover_button">G90</li>
+               <div class="discover_button_bar"></div>
+               <span></span>
+            </ul>
+         </div> 
+      </div>
 
       <!-- Lifestyle -->
       <div class="lifestyle">
@@ -459,6 +506,54 @@
 
          
       }
+
+       // Slide for Discover
+
+       var slideDiscoverState = 0;
+
+      function slideDiscover(target) {
+
+         // 이미지와 텍스트 변화를 위한 사전 작업
+
+         for (i=0; i<5; i++) {
+            document.getElementsByClassName('discover_button')[i].style ="color:rgb(255,255,255);";
+
+            document.getElementsByClassName('discover_img')[i].style = "opacity:0;";
+
+            document.getElementsByClassName('discover_detail')[i].style = "opacity:0;";
+         }
+
+         // 이미지와 텍스트 변화
+
+         document.getElementsByClassName('discover_img')[target].style = "opacity:1; animation: fade_in 2s forwards;";
+
+         document.getElementsByClassName('discover_button')[target].style ="color:rgb(173,123,97);"
+
+         document.getElementsByClassName('discover_detail')[target].style = "animation: fade_in 2s forwards;";
+
+
+
+         document.getElementsByClassName('discover_button_bar')[0].style.left = target*20 + "%";
+
+         slideDiscoverState = target;
+         
+      }
+
+
+      function autoSlideDiscover() {
+         // slide number 1 증가
+         slideDiscoverState++;
+
+         // 만약 슬라이드가 마지막보다 크면 초기화
+         if (slideDiscoverState == 5 ) {
+            slideDiscoverState = 0;
+         }
+
+         slideDiscover(slideDiscoverState);
+
+      }
+
+      var slideDiscoverI = setInterval(autoSlideDiscover, 5000);
 
   </script>
 </body>

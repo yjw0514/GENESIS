@@ -36,7 +36,7 @@
 
 
 body {
-  /* font-family: "Noto Sans KR"; */
+  font-family: "genesis-text";
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -47,6 +47,16 @@ body {
 div, ul, li {
   background-size: cover;
   background-position: center center;
+}
+
+h1, h2, h3, h4 {
+  font-family: "genesis-head-light";
+  font-weight: 400;
+}
+
+p {
+  font-family: "genesis-text";
+  font-weight: 400;
 }
 
 /* Layout Style */
