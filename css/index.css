@@ -1,6 +1,6 @@
 /* Genesis CSS */
 
-.hero {
+/* .hero {
   width: 100%;
   height: 950px;
   position: relative;
@@ -68,774 +68,277 @@
 @keyframes fade_out {
   0% {opacity:1;}
   100% {opacity:0;}
-}
+} */
 
+/* Hero CSS */
+#hero { width: 100%; height: calc(100vh + 20px); max-height: 970px;background-color: #111; padding: 70px 0 0 0; }
+  
+  .hero_slide { width: 100%; max-height: 900px; height:100%; background-color: #111; position: relative; top:0; left:0; }
+  
+  /* Slide Content */
+  
 
+  @keyframes fade_in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Main Visual css*/
-
-.main_visual_wrap {
-  width: 100%;
-  padding: 0 48px;
-}
-
-.main_visual {
-  width: 100%;
-  padding: 0 8px;
-  display: flex;
-}
-
-.main_visual_1 {
-  width: 50%;
-  height: 900px;
-  background-image: url(../img/nike-just-do-it.png);
-  padding: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.main_visual_1:hover {
-  cursor: pointer;
-}
-
-
-.main_visual_2 {
-  width: 50%;
-  height: 900px;
-  background-image: url(../img/nike-just-do-it_2.png);
-  padding: 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.button_shop_white {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  color: rgb(17, 17, 17);
-  border-radius: 20px;
-  text-align: center;
-  line-height: 40px;
-  border: none;
-}
-
-.button_shop_white:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-
-
-/* Main Visual Video */
-.hero_video_wrap {
-  width: 100%;
-  height: 900px;
-  padding: 0 56px;
+  .slide {position: absolute; top:0; left:0; display: none; width: 100%; height: 100%;  background-position: center; background-size: cover; background-repeat: no-repeat; opacity: 1; transition: opacity 0.3s;}
+  
+  .hero_slide .slide:nth-child(1) { display: block; 
+    background-image: url(../index/img/slide_1.jpg); opacity: 1;
+  }
+  .hero_slide .slide:nth-child(2) { display: none; 
+    background-image: url(../index/img/slide_2.jpg);
+  }
+  .hero_slide .slide:nth-child(3) { display: none; 
+    background-image: url(../index/img/slide_3.jpg);
+  }
+  .hero_slide .slide:nth-child(4) { display: none; 
+    background-image: url(../index/img/slide_4.jpg);
+  }
+  .hero_slide .slide:nth-child(5) { display: none; 
+    background-image: url(../index/img/slide_5.jpg);
+  }
+  
+  .slide_grad_1 { position: absolute;
+    top:0; left:0;
+    width: 100%; height: 100%; background-image: linear-gradient(to right, rgba(17,17,17,0.3), rgba(0,0,0,0)); } 
+  
+  .slide_grad_2 { position: absolute;
+    bottom:0; left:0;
+    width: 100%; height: 20%; background-image: linear-gradient(to top, rgba(17,17,17,1), rgba(0,0,0,0)); } 
+  
+  .slide_text { width: calc(100% - 162px); height: calc(100% - 120px); position: absolute; top:0; left:0; padding: 76px 60px; margin: 0 80px; border: 1px solid rgb(163,107,79);
+  border-top: none; color:rgb(255,255,255); display: flex; flex-direction: column; justify-content: space-between;}
+  
+  .slide_eyebrow { font-family: "genesis-head-light"; font-size: 26px; line-height: 28px; letter-spacing: -0.65px; margin: 0 0 14px;}
+  
+  .slide_title { font-family: "genesis-head-light"; font-size: 120px; line-height: 110px; letter-spacing: -3px; margin: 0 0 17px;
+  }
+  
+  .hero_slide .slide:nth-child(2) .slide_title { 
+    width: 800px;
+    font-family: "genesis-head-light"; font-size: 100px; line-height: 94px; letter-spacing: -2.5px; margin: 0 0 32px;
+  }
+  
+  .slide_subtitle { font-family: "genesis-head-light"; font-size: 24px; line-height: 32px; letter-spacing: -0.6px; margin: 0 0 17px; }
+  
+  .slide_subtitle_span { display: block; font-family: "genesis-head-light"; font-size: 30px; line-height: 32px; letter-spacing: -0.6px; margin: 10px 0 0;
+  }
+  
+  .slide_more { width: 220px; height: 70px; margin: 0 0 32px;}
+  .slide_more_img { width: 100%; }
+  
+  .slide_more_text { font-family: "genesis-head-light"; font-size: 26px; line-height: 28px; letter-spacing: 0px; margin: 0 0 33px; }
+  
+  .slide_link_white { width: 240px; height: 56px; font-family:"genesis-text"; font-size: 16px; line-height: 56px; background-color: rgb(0,0,0); color:rgb(255,255,255); display: inline-block;
+  text-align: center; 
+  border: 1px solid rgb(255,255,255); 
+  position: relative; top:0; left: 0;
   overflow: hidden;
-  position: relative;
+  
+  } 
+  
+  .slide_link_white_bg {
+  position: absolute; top:0; left:0; width: 100%; height: 100%; background-color: rgb(255,255,255);  
+  
+  }
+  .slide_link_white_text { 
+    position: absolute; top:0; left:0; width: 100%; height: 100%; line-height: 56px;
+    color:rgb(0,0,0);
+  }
+  .slide_link_white:hover .slide_link_white_bg { 
+    top:-64px;   transition: top 0.3s;
+  }
+  
+  .slide_link_white:hover .slide_link_white_text { 
+    color:rgb(255,255,255); transition: color 0.2s;
+  } 
+  
+  .slide_link_black { width: 240px; height: 56px; font-family:"genesis-text"; font-size: 16px; line-height: 56px; background-color: rgb(255,255,255); color:rgb(255,255,255); display: inline-block;
+    text-align: center; margin: 0 0 0 20px;  border: 1px solid rgb(255,255,255);   position: relative; top:0; left: 0;
+    overflow: hidden;} 
+  
+  .slide_link_black_bg {
+    position: absolute; top:0; left:0; width: 100%; height: 100%; background-color: rgb(0,0,0); }
+  
+  .slide_link_black_text { 
+    position: absolute; top:0; left:0; width: 100%; height: 100%; line-height: 56px;
+    color:rgb(255,255,255);
+  }
+  
+  .slide_link_black:hover .slide_link_black_bg { 
+    top:-64px;   transition: top 0.3s;
+  }
+
+  .slide_link_black:hover .slide_link_black_text { 
+          color:rgb(0,0,0); transition: color 0.2s;
+} 
+  
+  /* Slide Index */
+  
+  .index { position: absolute; bottom:75px; left:0; 
+  width: 100%; }
+  
+  .index_list { width: 180px; height: 20px; display: flex; justify-content: center; align-items: center; margin: 0 auto;}
+
+  .index_btn { display: block; width: 20px; height: 20px;  padding: 0 4px; margin: 0 6px; text-align: center; display: flex; align-items: center; cursor: pointer;}
+  
+  
+  .index_btn_bullet {display: block;
+    width: 8px; height: 8px;
+    border: 0px solid rgb(255,255,255); background-color: rgba(255,255,255,0.4); border-radius: 4px; }
+  
+  .index_btn:nth-child(1) .index_btn_bullet { width: 12px; height: 12px;  border: 2px solid rgb(255,255,255);  border-radius: 6px; background-color: rgba(255,255,255,0); }
+  
+  .index_btn_play { width: 14px; height: 14px; vertical-align: middle; }
+
+
+  /* Move Button */
+  .move {
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .move_prev,
+  .move_next {
+    width: 32px;
+    height: 64px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .move_prev img,
+  .move_next img{
+    width: 28px;
+  }
+
+  /* Video section */
+  video {
+    width: 100%;
+    height: 900px;
+  }
+
+
+/* Design Slide */
+
+@keyframes move_left_out {
+  0% {left:0;}
+  100% {left: -100%;}
 }
 
-.hero_video {
-  width: 100%;
-  margin: -90px 0 0 0;
+@keyframes move_left_in {
+  0% {left:100%;}
+  100% {left: 0;}
 }
-.hero_video_wrap a {
-  display: block;
-  width: calc(100% - 112px);
-  height: 100%;
-  top: 0;
-  left: 56px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin: 0 auto;
+
+@keyframes move_right_out {
+  0% {left:0;}
+  100% {left: 100%;}
 }
-.hero_video_title {
+
+@keyframes move_right_in {
+  0% {left:-100%;}
+  100% {left: 0;}
+}
+
+
+#design { width: 100%; height: 100vh; background-color: #111; max-height: 1080px; overflow: hidden;}
+  
+.design_slide_wrap { width: 100%; max-height: 1080px; height:100%; background-color: #111; position: relative; top:0; left:0; }
+
+.design_slide {position: absolute; top:0; left:0; display: block; width: 100%; height: 100%;  background-position: center; background-size: cover; background-repeat: no-repeat; opacity: 1; transition: all 0.5s;}
+
+.design_slide_wrap .design_slide:nth-child(1) { left: 0; display: block; 
+  background-image: url(../index/img/gv70_1.jpg); opacity: 1;
+}
+.design_slide_wrap .design_slide:nth-child(2) { left: 100%;  
+  background-image: url(../index/img/gv70_2.jpg);
+}
+.design_slide_wrap .design_slide:nth-child(3) { left: 100%;  
+  background-image: url(../index/img/gv70_3.jpg);
+}
+.design_slide_wrap .design_slide:nth-child(4) { left: 100%;  
+  background-image: url(../index/img/gv70_4.jpg);
+}
+.design_slide_wrap .design_slide:nth-child(5) { left: 100%;  
+  background-image: url(../index/img/gv70_5.jpg);
+}
+
+/* Index btn */
+.design_index { position: absolute; bottom:75px; left:0; 
+  width: 100%; }
+  
+.design_index_list { width: 180px; height: 20px; display: flex; justify-content: center; align-items: center; margin: 0 auto;}
+
+.design_index_btn { display: block; width: 20px; height: 20px;  padding: 0 4px; margin: 0 6px; text-align: center; display: flex; align-items: center; cursor: pointer;}
+
+
+.design_index_btn_bullet {display: block;
+  width: 8px; height: 8px;
+  border: 0px solid rgb(255,255,255); background-color: rgba(255,255,255,0.4); border-radius: 4px; }
+
+.design_index_btn:nth-child(1) .index_btn_bullet { width: 12px; height: 12px;  border: 2px solid rgb(255,255,255);  border-radius: 6px; background-color: rgba(255,255,255,0); }
+
+.design_index_btn_play { width: 14px; height: 14px; vertical-align: middle; }
+
+/* Move Button */
+.design_move {
   width: 100%;
+  height: 62px;
   position: absolute;
-  top: 420px;
+  top: 45%;
   left: 0;
-  text-align: center;
-  font-family: 'Nike Futura';
-  font-size: 120px;
-  color: rgba(17,17,17, 0.6);
-}
-
-/* The Latest And Greatest */
-.best_wrap {
-  width: 100%;
-  padding: 84px 0 0;
-}
-
-.best_scroll_wrap {
-  width: 100%;
-  overflow: scroll;
-  padding: 0 0 20px 48px;
-}
-
-.best {
-  width: 200%;
-  display: flex;
-}
-
-.best li {
-  width: calc(16.66667% - 16px);
-  height: auto;
-  margin: 0 8px;
-}
-
-.best li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.best li img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.best li div {
   display: flex;
   justify-content: space-between;
-  padding: 12px 16px 0 0;
+  align-items: center;
+  padding: 0 30px;
 }
 
-.best li div h4 {
-  font-size: 16px;
-  color: rgb(17, 17, 17);
-}
-
-.best li div p {
-  color: rgb(17, 17, 17);
-}
-
-
-
-/* Just In */
-.just_in_wrap {
-  width: 100%;
-  padding: 84px 48px 0;
-}
-
-.just_in {
-  width: 100%;
-  padding: 0;
-  display: flex;
-}
-
-.just_in_1 {
-  width: calc(50% - 16px);
-  height: 700px;
-  background-image: url(../img/just-in.jpg);
-  margin: 0 8px;
-}
-
-.just_in_1_a {
+.design_move_prev,
+.design_move_next {
+  width: 45px;
+  height: 62px;
   display: block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-}
-
-.just_in_2 {
-  width: calc(50% - 16px);
-  height: 700px;
-  background-image: url(../img/just-in-2.jpg);
-  margin: 0 8px;
-}
-
-.just_in_2_a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-}
-
-.button_shop_black {
-  width: 100px;
-  height: 40px;
-  background-color: rgb(17, 17, 17);
-  color: white;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 40px;
-  border: none;
-}
-
-.button_shop_black:hover {
-  background-color: rgba(17, 17, 17, 0.6);
-}
-
-/* Main Footwear */
-.footwear_wrap {
-  width: 100%;
-  padding: 84px 48px 0;
-}
-
-.footwear {
-  width: 100%;
-  padding: 0 8px;
-  display: flex;
-}
-
-.footwear_1 {
-  width: 100%;
-  height: 700px;
-  background-image: url(../img/footwear.jpg);
-  padding: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.footwear_1:hover {
+  align-items: center;
   cursor: pointer;
 }
 
-.button_shop_white {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  color: rgb(17, 17, 17);
-  border-radius: 20px;
-  text-align: center;
-  line-height: 40px;
-  border: none;
-}
-
-.button_shop_white:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Main Trending Now */
-
-.trending_now_wrap {
-  width: 100%;
-  height: auto;
-  padding: 84px 48px 0;
-}
-
-.trending_now {
-  width: 100;
-  display: flex;
-}
-
-.trending_now_1 {
-  width: calc(50% - 16px);
-  margin: 0 8px;
-  height: 700px;
-  background-image: url(../img/trending_now.jpg);
-}
-
-.trending_now_1_a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-}
-.trending_now_1_a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.trending_now_2 {
-  width: calc(50% - 16px);
-  margin: 0 8px;
-  height: 700px;
-  background-image: url(../img/trending_now_2.jpg);
-}
-
-.trending_now_2_a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-}
-
-.trending_now_2_a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Main Gear fot Your Goals */
-.gear_wrap {
-  width: 100%;
-  padding: 84px 48px;
-}
-
-.gear {
-  width: 100%;
-  display: flex;
-}
-
-.gear li {
-  width: calc(33.3333% - 16px);
-  margin: 0 8px;
-}
-
-.gear li img {
-  width: 100%;
-  margin: 0 0 16px;
-}
-
-
-/* Nike Slogan */
-.slogan_wrap {
-  width: 100%;
-  padding: 84px 48px 0;
-}
-
-.slogan {
-  width: 100%;
-  height: 500px;
-  margin: 0 8px;
-  background-image: url(../img/slogan.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0 0 30px;
-}
-
-.slogan:hover {
-  cursor: pointer;
-}
-
-.slogan button {
-  margin: 0 4px;
-}
-
-.button_join_black {
-  width: 112px;
-  height: 40px;
-  background-color: rgb(17, 17, 17);
-  color: white;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 40px;
-  border: none;
-}
-
-.button_join_black:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-
-/*  Menu Link  */
-.menulink_wrap {
-  width: 100%;
-  padding: 84px 48px 0;
-}
-
-.menulink {
-  width: 880px;
-  padding: 0 8px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  height: 180px;
-  overflow: hidden;
-  transition: height  0.6s;
-}
-
-.menulink:hover {
-  height: 700px;
-}
-
-.menulink ul {
-  width: 192px;
-}
-
-
-.menulink ul li {
-  margin: 0 0 12px 0;
-}
-
-.menulink ul li a{
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Noto Sans KR';
-  line-height: 24px;
-  color: rgb(117, 117, 117);
-}
-
-.menulink ul li:first-child {
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Noto Sans KR';
-  line-height: 24px;
-  margin: 0 0 24px 0;
-  color: rgb(17, 17, 17)
-}
-
-/* CSS for Tablet landscape & Mini Notebool (1280, 1366) */
-
-@media screen and (max-width: 1439px) {
-
-  /* Main Visual css*/
-
-.main_visual_1 {
-  height: 700px;
-}
-
-.main_visual_2 {
-  height: 700px;
-}
-
-  /* Just In css*/
-.just_in_1 {
-  height: 500px;
-}
-.just_in_2 {
-  height: 500px;
-}
-
-/* Main Footwear */
-.footwear_1 {
-  height: 900px;
-
-}
-
-/* Main Trending Now */
-.trending_now_1 {
-  height: 500px;
-}
-
-.trending_now_2 {
-  height: 500px;
-}
+.design_move_prev img,
+.design_move_next img{
+  width: 28px;
 }
 
 
 
-@media screen and (max-width:1023px) {
-   /* Main Visual CSS */
 
-.main_visual_wrap { 
-  padding: 0 12px;
-}
 
-.main_visual_1 {  
-  height: 500px
-  ; 
-}
-.main_visual_1 p:nth-child(2) { 
-  font-size: 48px; 
-  line-height: 40px;
-}
 
-.main_visual_2 {  
-  height: 500px; 
-}
 
 
-/* The Latest & Greatest - Best */
 
-.best_wrap { 
-  width: 100%; 
-  padding:84px 0 0 ;
-}
-.best_scroll_wrap { 
-  width: 100%; 
-  overflow: scroll; 
-  padding: 0 0 20px 12px;
-}
-.best_wrap h2 { 
-  padding:0 0 0 20px;
-}
 
-.best {
-  width: 270%;
-  display: flex;
-}
 
-.best li {
-  width: calc(25% - 16px);
-  height: auto;
-  margin: 0 8px;
-}
 
-.best li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
 
 
-/* Just In CSS */
 
-.just_in_wrap { width: 100%; padding: 84px 12px 0; }
 
-.just_in_1 { height: 500px; }
 
-.just_in_2 { height: 500px; }
 
-/* Featured Footwear CSS */
 
-.footwear_wrap { width: 100%; padding: 84px 12px 0;}
-.footwear_1 { height: 500px;}
-.footwear_1 p:nth-child(2) { font-size: 48px; line-height: 40px; }
 
 
-/* Trending Now */
 
-.trending_now_wrap { width: 100%; padding: 84px 12px 0; }
 
-.trending_now_1 {height: 500px;}
-.trending_now_2 {height: 500px;}
 
-
-/* Gear for Your Golas CSS */
-
-.gear_wrap { width: 100%; padding: 84px 12px 0; }
-
-.gear_scroll_wrap {
-  width: 100%;
-  overflow: scroll;
-  padding: 0 0 20px 0;
-}
-
-.gear {
-  width: 1038px;
-}
-
-.gear_1 {
-  width: 330px;
-}
-
-.gear_2 {
-  width: 330px;
-}
-
-.gear_3 {
-  width: 330px;
-}
-
-/* Menu Link */
-
-.menulink_wrap { width: 100%; padding: 84px 12px;}
-
-.menulink { width: 100%; padding: 0 8px; }
-
-.menulink ul { width: 25%;}
-
-.menulink ul li a {font-size: 14px; line-height: 24px; }
-
-.menulink ul li:first-child {font-size: 14px; line-height: 24px;}
-
-}
-
-
-
-/* CSS for Mobile Portrait */
-@media screen and (max-width:639px) {
-
-   .main_visual { 
-     width: 100%; 
-     padding: 0 8px; 
-     display: flex; 
-     flex-wrap: wrap;
-    }
-
-   .main_visual_1 { 
-     width:100%; 
-     height: auto; 
-     background-image: none; 
-     padding: 0px; 
-   }
-
-   .main_visual_1 div {
-     display: block; 
-     margin: 0 0 20px 0; 
-     width: 100%; 
-     height: 500px; 
-     background-image: url(../img/nike-just-do-it.png); 
-     background-size: cover; 
-     background-position: center center; 
-     background-repeat: no-repeat;
-    }
-
-   .main_visual_1:hover { 
-     cursor: pointer;
-    }
-   .main_visual_1 p { 
-     color:rgb(17,17,17);
-    }
-   .main_visual_1 a { 
-     color:white; 
-     background-color: rgb(17,17,17);
-    }
-
-   .main_visual_2 { 
-     display: none;
-   }
-
-   /* The Latest And Greatest - Best */
-
-  .best_scroll_wrap {
-    padding: 0 0 20px 12px;
-  }
-  
-  .best {
-    width: 1892px;
-  }
-  
-  .best li {
-    width: 300px;
-  }
-
-
-  /* Just In */
-  .just_in {
-    flex-wrap: wrap;
-  }
-  .just_in_1 { 
-    width: 100%;
-    height: 500px; 
-    margin: 0 8px 8px;
-  }
-
-  .just_in_2 { 
-    width: 100%;
-    height: 500px; }
-
-    .just_in_1_a {
-      padding: 24px;
-    }
-    
-    .just_in_2_a {
-      padding: 24px;
-    }
-
-    /* Featured Footwear css */
-
-    .footwear_1 {
-      background-image: none;
-      height: 500px;
-      padding: 0;
-    }
-    .footwear_1 div {
-      width: 100%;
-      height: 500px;
-      background-image: url(../img/footwear.jpg);
-      margin: 0 0 20px 0;
-    }
-
-    /* Trending Now */
-    .trending_now_wrap {
-      width: 100%;
-      padding: 84px 12px 0;
-    }
-    .trending_now {
-      flex-wrap: wrap;
-    }
-    .trending_now_1{ 
-      width: 100%;
-      height: 500px; 
-      margin: 0 8px 8px;
-    }
-  
-    .trending_now_2 { 
-      width: 100%;
-      height: 500px; }
-  
-    .trending_now_1_a {
-      padding: 24px;
-    }
-    
-    .trending_now_2_a {
-      padding: 24px;
-    }
-    /* Gear for Your Golas CSS */
-
-    .gear_wrap { width: 100%; padding: 64px 12px 0; }
-
-    .gear_scroll_wrap {
-      width: 100%;
-      overflow: scroll;
-      padding: 0 0 20px 0;
-    }
-    .gear {
-      width: 948px;
-    }
-
-    .gear_1 {
-      width: 300px;
-    }
-
-    .gear_2 {
-      width: 300px;
-    }
-
-    .gear_3 {
-      width: 300px;
-    }
-
-    /* Nike Slogan */
-    .slogan_wrap {
-      width: 100%;
-      padding: 64px 0 0;
-    }
-
-    .slogan {
-      background-image: url(../img/slogan_m.jpg);
-      margin: 0;
-    }
-
-
-
-      /* Menu Link */
-
-      .menulink_wrap { width: 100%; padding: 84px 12px;}
-
-      .menulink { width: 100%; padding: 0 8px; 
-      flex-wrap: wrap;
-      }
-
-      .menulink ul { width: 100%; height: 40px; overflow: hidden;}
-
-      .menulink ul li a {font-size: 14px; line-height: 24px; }
-
-      .menulink ul li:first-child {font-size: 14px; line-height: 24px;}
-  }
